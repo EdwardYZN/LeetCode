@@ -1,0 +1,449 @@
+******************************symmetric-tree
+ Given a binary tree, check whether it is a mirror of itself (ie, symmetric
+around its center).  For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
+1
+/ \
+2   2
+/ \ / \
+3  4 4  3   But the following [1,2,2,null,3,null,3] is not:  1
+/ \
+2   2
+\   \
+3    3    Note: Bonus points if you could solve it both recursively and
+iteratively.   Subscribe to see which companies asked this question    Show Tags
+Tree  Depth-first Search  Breadth-first Search
+
+******************************binary-tree-level-order-traversal
+ Given a binary tree, return the level order traversal of its nodes' values.
+(ie, from left to right, level by level).  For example: Given binary tree
+[3,9,20,null,null,15,7] ,  3
+/ \
+9  20
+/  \
+15   7   return its level order traversal as:  [
+[3],
+[9,20],
+[15,7]
+]    Subscribe to see which companies asked this question    Show Tags   Tree
+Breadth-first Search     Show Similar Problems   (M) Binary Tree Zigzag Level
+Order Traversal  (E) Binary Tree Level Order Traversal II  (E) Minimum Depth of
+Binary Tree  (M) Binary Tree Vertical Order Traversal
+
+******************************sum-of-left-leaves
+ Find the sum of all left leaves in a given binary tree.  Example:  3
+/ \
+9  20
+/  \
+15   7
+There are two left leaves in the binary tree, with values 9 and 15 respectively.
+Return 24 .    Subscribe to see which companies asked this question    Show Tags
+Tree
+
+******************************binary-tree-preorder-traversal
+ Given a binary tree, return the preorder traversal of its nodes' values.  For
+example: Given binary tree {1,#,2,3} ,  1
+\
+2
+/
+3   return [1,2,3] .  Note: Recursive solution is trivial, could you do it
+iteratively?   Subscribe to see which companies asked this question    Show Tags
+Tree  Stack     Show Similar Problems   (M) Binary Tree Inorder Traversal  (M)
+Verify Preorder Sequence in Binary Search Tree
+
+******************************binary-tree-right-side-view
+ Given a binary tree, imagine yourself standing on the right side of it, return
+the values of the nodes you can see ordered from top to bottom.  For example:
+Given the following binary tree,  1            <---
+/   \
+2     3         <---
+\     \
+5     4       <---   You should return [1, 3, 4] .  Credits: Special thanks to
+@amrsaqr for adding this problem and creating all test cases.   Subscribe to see
+which companies asked this question    Show Tags   Tree  Depth-first Search
+Breadth-first Search     Show Similar Problems   (M) Populating Next Right
+Pointers in Each Node
+
+******************************convert-sorted-array-to-binary-search-tree
+ Given an array where elements are sorted in ascending order, convert it to a
+height balanced BST.   Subscribe to see which companies asked this question
+Show Tags   Tree  Depth-first Search     Show Similar Problems   (M) Convert
+Sorted List to Binary Search Tree
+
+******************************populating-next-right-pointers-in-each-node
+ Given a binary tree struct TreeLinkNode {
+TreeLinkNode *left;
+TreeLinkNode *right;
+TreeLinkNode *next;
+}   Populate each next pointer to point to its next right node. If there is no
+next right node, the next pointer should be set to NULL .  Initially, all next
+pointers are set to NULL .   Note:   You may only use constant extra space.  You
+may assume that it is a perfect binary tree (ie, all leaves are at the same
+level, and every parent has two children).    For example, Given the following
+perfect binary tree,  1
+/  \
+2    3
+/ \  / \
+4  5  6  7   After calling your function, the tree should look like:  1 -> NULL
+/  \
+2 -> 3 -> NULL
+/ \  / \
+4->5->6->7 -> NULL    Subscribe to see which companies asked this question
+Show Tags   Tree  Depth-first Search     Show Similar Problems   (H) Populating
+Next Right Pointers in Each Node II  (M) Binary Tree Right Side View
+
+******************************serialize-and-deserialize-binary-tree
+ Serialization is the process of converting a data structure or object into a
+sequence of bits so that it can be stored in a file or memory buffer, or
+transmitted across a network connection link to be reconstructed later in the
+same or another computer environment.  Design an algorithm to serialize and
+deserialize a binary tree. There is no restriction on how your
+serialization/deserialization algorithm should work. You just need to ensure
+that a binary tree can be serialized to a string and this string can be
+deserialized to the original tree structure.  For example, you may serialize the
+following tree 1
+/ \
+2   3
+/ \
+4   5 as "[1,2,3,null,null,4,5]" , just the same as how LeetCode OJ serializes a
+binary tree . You do not necessarily need to follow this format, so please be
+creative and come up with different approaches yourself.   Note: Do not use
+class member/global/static variables to store states. Your serialize and
+deserialize algorithms should be stateless.  Credits: Special thanks to
+@Louis1992 for adding this problem and creating all test cases.   Subscribe to
+see which companies asked this question    Show Tags   Tree  Design     Show
+Similar Problems   (M) Encode and Decode Strings
+
+******************************construct-binary-tree-from-inorder-and-postorder-traversal
+ Given inorder and postorder traversal of a tree, construct the binary tree.
+Note: You may assume that duplicates do not exist in the tree.   Subscribe to
+see which companies asked this question    Show Tags   Tree  Array  Depth-first
+Search     Show Similar Problems   (M) Construct Binary Tree from Preorder and
+Inorder Traversal
+
+******************************unique-binary-search-trees-ii
+ Given an integer n , generate all structurally unique BST's (binary search
+trees) that store values 1... n .  For example, Given n = 3, your program should
+return all 5 unique BST's shown below. 1         3     3      2      1
+\       /     /      / \      \
+3     2     1      1   3      2
+/     /       \                 \
+2     1         2                 3    Subscribe to see which companies asked
+this question    Show Tags   Tree  Dynamic Programming     Show Similar Problems
+(M) Unique Binary Search Trees  (M) Different Ways to Add Parentheses
+
+******************************balanced-binary-tree
+ Given a binary tree, determine if it is height-balanced.  For this problem, a
+height-balanced binary tree is defined as a binary tree in which the depth of
+the two subtrees of every node never differ by more than 1.   Subscribe to see
+which companies asked this question    Show Tags   Tree  Depth-first Search
+Show Similar Problems   (E) Maximum Depth of Binary Tree
+
+******************************binary-tree-inorder-traversal
+ Given a binary tree, return the inorder traversal of its nodes' values.  For
+example: Given binary tree [1,null,2,3] ,  1
+\
+2
+/
+3   return [1,3,2] .  Note: Recursive solution is trivial, could you do it
+iteratively?   Subscribe to see which companies asked this question    Show Tags
+Tree  Hash Table  Stack     Show Similar Problems   (M) Validate Binary Search
+Tree  (M) Binary Tree Preorder Traversal  (H) Binary Tree Postorder Traversal
+(M) Binary Search Tree Iterator  (M) Kth Smallest Element in a BST  (H) Closest
+Binary Search Tree Value II  (M) Inorder Successor in BST
+
+******************************count-complete-tree-nodes
+ Given a complete binary tree, count the number of nodes.  Definition of a
+complete binary tree from Wikipedia : In a complete binary tree every level,
+except possibly the last, is completely filled, and all nodes in the last level
+are as far left as possible. It can have between 1 and 2 h nodes inclusive at
+the last level h.   Subscribe to see which companies asked this question    Show
+Tags   Tree  Binary Search     Show Similar Problems   (E) Closest Binary Search
+Tree Value
+
+******************************maximum-depth-of-binary-tree
+ Given a binary tree, find its maximum depth.  The maximum depth is the number
+of nodes along the longest path from the root node down to the farthest leaf
+node.   Subscribe to see which companies asked this question    Show Tags   Tree
+Depth-first Search     Show Similar Problems   (E) Balanced Binary Tree  (E)
+Minimum Depth of Binary Tree
+
+******************************construct-binary-tree-from-preorder-and-inorder-traversal
+ Given preorder and inorder traversal of a tree, construct the binary tree.
+Note: You may assume that duplicates do not exist in the tree.   Subscribe to
+see which companies asked this question    Show Tags   Tree  Array  Depth-first
+Search     Show Similar Problems   (M) Construct Binary Tree from Inorder and
+Postorder Traversal
+
+******************************flatten-binary-tree-to-linked-list
+ Given a binary tree, flatten it to a linked list in-place.  For example, Given
+1
+/ \
+2   5
+/ \   \
+3   4   6  The flattened tree should look like:  1
+\
+2
+\
+3
+\
+4
+\
+5
+\
+6  click to show hints.  Hints:  If you notice carefully in the flattened tree,
+each node's right child points to the next node of a pre-order traversal.
+Subscribe to see which companies asked this question    Show Tags   Tree  Depth-
+first Search
+
+******************************invert-binary-tree
+ Invert a binary tree. 4
+/   \
+2     7
+/ \   / \
+1   3 6   9 to 4
+/   \
+7     2
+/ \   / \
+9   6 3   1  Trivia: This problem was inspired by this original tweet by Max
+Howell : Google: 90% of our engineers use the software you wrote (Homebrew), but
+you can’t invert a binary tree on a whiteboard so fuck off.   Subscribe to see
+which companies asked this question    Show Tags   Tree
+
+******************************lowest-common-ancestor-of-a-binary-tree
+ Given a binary tree, find the lowest common ancestor (LCA) of two given nodes
+in the tree.  According to the definition of LCA on Wikipedia : “The lowest
+common ancestor is defined between two nodes v and w as the lowest node in T
+that has both v and w as descendants (where we allow a node to be a descendant
+of itself ).”  _______3______
+/              \
+___5__          ___1__
+/      \        /      \
+6      _2       0       8
+/  \
+7   4  For example, the lowest common ancestor (LCA) of nodes 5 and 1 is 3 .
+Another example is LCA of nodes 5 and 4 is 5 , since a node can be a descendant
+of itself according to the LCA definition.   Subscribe to see which companies
+asked this question    Show Tags   Tree     Show Similar Problems   (E) Lowest
+Common Ancestor of a Binary Search Tree
+
+******************************path-sum
+ Given a binary tree and a sum, determine if the tree has a root-to-leaf path
+such that adding up all the values along the path equals the given sum. For
+example: Given the below binary tree and sum = 22 , 5
+/ \
+4   8
+/   / \
+11  13  4
+/  \      \
+7    2      1  return true, as there exist a root-to-leaf path 5->4->11->2 which
+sum is 22.   Subscribe to see which companies asked this question    Show Tags
+Tree  Depth-first Search     Show Similar Problems   (M) Path Sum II  (H) Binary
+Tree Maximum Path Sum  (M) Sum Root to Leaf Numbers
+
+******************************path-sum-ii
+ Given a binary tree and a sum, find all root-to-leaf paths where each path's
+sum equals the given sum. For example: Given the below binary tree and sum = 22
+, 5
+/ \
+4   8
+/   / \
+11  13  4
+/  \    / \
+7    2  5   1  return  [
+[5,4,11,2],
+[5,8,4,5]
+]    Subscribe to see which companies asked this question    Show Tags   Tree
+Depth-first Search     Show Similar Problems   (E) Path Sum  (E) Binary Tree
+Paths
+
+******************************binary-search-tree-iterator
+ Implement an iterator over a binary search tree (BST). Your iterator will be
+initialized with the root node of a BST.  Calling next() will return the next
+smallest number in the BST.  Note: next() and hasNext() should run in average
+O(1) time and uses O( h ) memory, where h is the height of the tree.  Credits:
+Special thanks to @ts for adding this problem and creating all test cases.
+Subscribe to see which companies asked this question    Show Tags   Tree  Stack
+Design     Show Similar Problems   (M) Binary Tree Inorder Traversal  (M)
+Flatten 2D Vector  (M) Zigzag Iterator  (M) Peeking Iterator  (M) Inorder
+Successor in BST
+
+******************************unique-binary-search-trees
+ Given n , how many structurally unique BST's (binary search trees) that store
+values 1... n ?  For example, Given n = 3, there are a total of 5 unique BST's.
+1         3     3      2      1
+\       /     /      / \      \
+3     2     1      1   3      2
+/     /       \                 \
+2     1         2                 3    Subscribe to see which companies asked
+this question    Show Tags   Tree  Dynamic Programming     Show Similar Problems
+(M) Unique Binary Search Trees II
+
+******************************same-tree
+ Given two binary trees, write a function to check if they are equal or not.
+Two binary trees are considered equal if they are structurally identical and the
+nodes have the same value.   Subscribe to see which companies asked this
+question    Show Tags   Tree  Depth-first Search
+
+******************************recover-binary-search-tree
+ Two elements of a binary search tree (BST) are swapped by mistake.  Recover the
+tree without changing its structure.  Note: A solution using O( n ) space is
+pretty straight forward. Could you devise a constant space solution?   Subscribe
+to see which companies asked this question    Show Tags   Tree  Depth-first
+Search
+
+******************************minimum-depth-of-binary-tree
+ Given a binary tree, find its minimum depth.  The minimum depth is the number
+of nodes along the shortest path from the root node down to the nearest leaf
+node.   Subscribe to see which companies asked this question    Show Tags   Tree
+Depth-first Search  Breadth-first Search     Show Similar Problems   (E) Binary
+Tree Level Order Traversal  (E) Maximum Depth of Binary Tree
+
+******************************sum-root-to-leaf-numbers
+ Given a binary tree containing digits from 0-9 only, each root-to-leaf path
+could represent a number.  An example is the root-to-leaf path 1->2->3 which
+represents the number 123 .  Find the total sum of all root-to-leaf numbers.
+For example, 1
+/ \
+2   3   The root-to-leaf path 1->2 represents the number 12 . The root-to-leaf
+path 1->3 represents the number 13 .  Return the sum = 12 + 13 = 25 .
+Subscribe to see which companies asked this question    Show Tags   Tree  Depth-
+first Search     Show Similar Problems   (E) Path Sum  (H) Binary Tree Maximum
+Path Sum
+
+******************************binary-tree-paths
+ Given a binary tree, return all root-to-leaf paths.  For example, given the
+following binary tree:   1
+/   \
+2     3
+\
+5   All root-to-leaf paths are: ["1->2->5", "1->3"]   Credits: Special thanks to
+@jianchao.li.fighter for adding this problem and creating all test cases.
+Subscribe to see which companies asked this question    Show Tags   Tree  Depth-
+first Search     Show Similar Problems   (M) Path Sum II
+
+******************************lowest-common-ancestor-of-a-binary-search-tree
+ Given a binary search tree (BST), find the lowest common ancestor (LCA) of two
+given nodes in the BST.  According to the definition of LCA on Wikipedia : “The
+lowest common ancestor is defined between two nodes v and w as the lowest node
+in T that has both v and w as descendants (where we allow a node to be a
+descendant of itself ).”  _______6______
+/              \
+___2__          ___8__
+/      \        /      \
+0      _4       7       9
+/  \
+3   5  For example, the lowest common ancestor (LCA) of nodes 2 and 8 is 6 .
+Another example is LCA of nodes 2 and 4 is 2 , since a node can be a descendant
+of itself according to the LCA definition.   Subscribe to see which companies
+asked this question    Show Tags   Tree     Show Similar Problems   (M) Lowest
+Common Ancestor of a Binary Tree
+
+******************************house-robber-iii
+ The thief has found himself a new place for his thievery again. There is only
+one entrance to this area, called the "root." Besides the root, each house has
+one and only one parent house. After a tour, the smart thief realized that "all
+houses in this place forms a binary tree". It will automatically contact the
+police if two directly-linked houses were broken into on the same night.
+Determine the maximum amount of money the thief can rob tonight without alerting
+the police.  Example 1:   3 / \
+2   3
+\   \ 3   1  Maximum amount of money the thief can rob = 3 + 3 + 1 = 7 .
+Example 2:  3
+/ \ 4  5 / \   \
+1   3   1 Maximum amount of money the thief can rob = 4 + 5 = 9 .  Credits:
+Special thanks to @dietpepsi for adding this problem and creating all test
+cases.   Subscribe to see which companies asked this question    Show Tags
+Tree  Depth-first Search     Show Similar Problems   (E) House Robber  (M) House
+Robber II
+
+******************************populating-next-right-pointers-in-each-node-ii
+ Follow up for problem " Populating Next Right Pointers in Each Node ".  What if
+the given tree could be any binary tree? Would your previous solution still
+work?   Note:  You may only use constant extra space.   For example, Given the
+following binary tree,  1
+/  \
+2    3
+/ \    \
+4   5    7   After calling your function, the tree should look like:  1 -> NULL
+/  \
+2 -> 3 -> NULL
+/ \    \
+4-> 5 -> 7 -> NULL    Subscribe to see which companies asked this question
+Show Tags   Tree  Depth-first Search     Show Similar Problems   (M) Populating
+Next Right Pointers in Each Node
+
+******************************binary-tree-level-order-traversal-ii
+ Given a binary tree, return the bottom-up level order traversal of its nodes'
+values. (ie, from left to right, level by level from leaf to root).  For
+example: Given binary tree [3,9,20,null,null,15,7] ,  3
+/ \
+9  20
+/  \
+15   7   return its bottom-up level order traversal as:  [
+[15,7],
+[9,20],
+[3]
+]    Subscribe to see which companies asked this question    Show Tags   Tree
+Breadth-first Search     Show Similar Problems   (E) Binary Tree Level Order
+Traversal
+
+******************************binary-tree-postorder-traversal
+ Given a binary tree, return the postorder traversal of its nodes' values.  For
+example: Given binary tree {1,#,2,3} ,  1
+\
+2
+/
+3   return [3,2,1] .  Note: Recursive solution is trivial, could you do it
+iteratively?   Subscribe to see which companies asked this question    Show Tags
+Tree  Stack     Show Similar Problems   (M) Binary Tree Inorder Traversal
+
+******************************binary-tree-maximum-path-sum
+ Given a binary tree, find the maximum path sum.  For this problem, a path is
+defined as any sequence of nodes from some starting node to any node in the tree
+along the parent-child connections. The path does not need to go through the
+root.  For example: Given the below binary tree, 1
+/ \
+2   3   Return 6 .   Subscribe to see which companies asked this question
+Show Tags   Tree  Depth-first Search     Show Similar Problems   (E) Path Sum
+(M) Sum Root to Leaf Numbers
+
+******************************kth-smallest-element-in-a-bst
+ Given a binary search tree, write a function kthSmallest to find the k th
+smallest element in it.  Note: You may assume k is always valid, 1 ≤ k ≤ BST's
+total elements.  Follow up: What if the BST is modified (insert/delete
+operations) often and you need to find the kth smallest frequently? How would
+you optimize the kthSmallest routine?   Try to utilize the property of a BST.
+What if you could modify the BST node's structure?  The optimal runtime
+complexity is O(height of BST).   Credits: Special thanks to @ts for adding this
+problem and creating all test cases.   Subscribe to see which companies asked
+this question    Show Tags   Binary Search  Tree     Show Similar Problems   (M)
+Binary Tree Inorder Traversal
+
+******************************validate-binary-search-tree
+ Given a binary tree, determine if it is a valid binary search tree (BST).
+Assume a BST is defined as follows:  The left subtree of a node contains only
+nodes with keys less than the node's key.  The right subtree of a node contains
+only nodes with keys greater than the node's key.  Both the left and right
+subtrees must also be binary search trees.    Example 1:  2
+/ \
+1   3 Binary tree [2,1,3] , return true.  Example 2:  1
+/ \
+2   3 Binary tree [1,2,3] , return false.   Subscribe to see which companies
+asked this question    Show Tags   Tree  Depth-first Search     Show Similar
+Problems   (M) Binary Tree Inorder Traversal
+
+******************************binary-tree-zigzag-level-order-traversal
+ Given a binary tree, return the zigzag level order traversal of its nodes'
+values. (ie, from left to right, then right to left for the next level and
+alternate between).  For example: Given binary tree [3,9,20,null,null,15,7] ,  3
+/ \
+9  20
+/  \
+15   7   return its zigzag level order traversal as:  [
+[3],
+[20,9],
+[15,7]
+]    Subscribe to see which companies asked this question    Show Tags   Tree
+Breadth-first Search  Stack     Show Similar Problems   (E) Binary Tree Level
+Order Traversal
+

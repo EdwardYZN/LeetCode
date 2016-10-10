@@ -1,0 +1,113 @@
+******************************sort-list
+ Sort a linked list in O ( n log n ) time using constant space complexity.
+Subscribe to see which companies asked this question    Show Tags   Linked List
+Sort     Show Similar Problems   (E) Merge Two Sorted Lists  (M) Sort Colors
+(M) Insertion Sort List
+
+******************************wiggle-sort-ii
+ Given an unsorted array nums , reorder it such that nums[0] < nums[1] > nums[2]
+< nums[3]... .   Example: (1) Given nums = [1, 5, 1, 1, 6, 4] , one possible
+answer is [1, 4, 1, 5, 1, 6] . (2) Given nums = [1, 3, 2, 2, 3, 1] , one
+possible answer is [2, 3, 1, 3, 1, 2] .   Note: You may assume all input has
+valid answer.   Follow Up: Can you do it in O(n) time and/or in-place with O(1)
+extra space?  Credits: Special thanks to @dietpepsi for adding this problem and
+creating all test cases.   Subscribe to see which companies asked this question
+Show Tags   Sort     Show Similar Problems   (M) Sort Colors  (M) Kth Largest
+Element in an Array  (M) Wiggle Sort
+
+******************************intersection-of-two-arrays
+ Given two arrays, write a function to compute their intersection.  Example:
+Given nums1 = [1, 2, 2, 1] , nums2 = [2, 2] , return [2] .  Note:   Each element
+in the result must be unique.  The result can be in any order.     Subscribe to
+see which companies asked this question    Show Tags   Binary Search  Hash Table
+Two Pointers  Sort     Show Similar Problems   (E) Intersection of Two Arrays II
+
+******************************insert-interval
+ Given a set of non-overlapping intervals, insert a new interval into the
+intervals (merge if necessary).  You may assume that the intervals were
+initially sorted according to their start times.   Example 1: Given intervals
+[1,3],[6,9] , insert and merge [2,5] in as [1,5],[6,9] .   Example 2: Given
+[1,2],[3,5],[6,7],[8,10],[12,16] , insert and merge [4,9] in as
+[1,2],[3,10],[12,16] .  This is because the new interval [4,9] overlaps with
+[3,5],[6,7],[8,10] .   Subscribe to see which companies asked this question
+Show Tags   Array  Sort     Show Similar Problems   (H) Merge Intervals
+
+******************************intersection-of-two-arrays-ii
+ Given two arrays, write a function to compute their intersection.  Example:
+Given nums1 = [1, 2, 2, 1] , nums2 = [2, 2] , return [2, 2] .  Note:   Each
+element in the result should appear as many times as it shows in both arrays.
+The result can be in any order.    Follow up:   What if the given array is
+already sorted? How would you optimize your algorithm?  What if nums1 's size is
+small compared to nums2 's size? Which algorithm is better?  What if elements of
+nums2 are stored on disk, and the memory is limited such that you cannot load
+all elements into the memory at once?     Subscribe to see which companies asked
+this question    Show Tags   Binary Search  Hash Table  Two Pointers  Sort
+Show Similar Problems   (E) Intersection of Two Arrays
+
+******************************insertion-sort-list
+ Sort a linked list using insertion sort.   Subscribe to see which companies
+asked this question    Show Tags   Linked List  Sort     Show Similar Problems
+(M) Sort List
+
+******************************maximum-gap
+ Given an unsorted array, find the maximum difference between the successive
+elements in its sorted form.  Try to solve it in linear time/space.  Return 0 if
+the array contains less than 2 elements.  You may assume all elements in the
+array are non-negative integers and fit in the 32-bit signed integer range.
+Credits: Special thanks to @porker2008 for adding this problem and creating all
+test cases.   Subscribe to see which companies asked this question    Show Tags
+Sort
+
+******************************largest-number
+ Given a list of non negative integers, arrange them such that they form the
+largest number.  For example, given [3, 30, 34, 5, 9] , the largest formed
+number is 9534330 .  Note: The result may be very large, so you need to return a
+string instead of an integer.  Credits: Special thanks to @ts for adding this
+problem and creating all test cases.   Subscribe to see which companies asked
+this question    Show Tags   Sort
+
+******************************h-index
+ Given an array of citations (each citation is a non-negative integer) of a
+researcher, write a function to compute the researcher's h-index.  According to
+the definition of h-index on Wikipedia : "A scientist has index h if h of
+his/her N papers have at least  h citations each, and the other N − h papers
+have no more than  h citations each."  For example, given citations = [3, 0, 6,
+1, 5] , which means the researcher has 5 papers in total and each of them had
+received 3, 0, 6, 1, 5 citations respectively. Since the researcher has 3 papers
+with at least  3 citations each and the remaining two with no more than  3
+citations each, his h-index is 3 .   Note : If there are several possible values
+for h , the maximum one is taken as the h-index.   An easy approach is to sort
+the array first.  What are the possible values of h-index?  A faster approach is
+to use extra space.   Credits: Special thanks to @jianchao.li.fighter for adding
+this problem and creating all test cases.   Subscribe to see which companies
+asked this question    Show Tags   Hash Table  Sort     Show Similar Problems
+(M) H-Index II
+
+******************************merge-intervals
+ Given a collection of intervals, merge all overlapping intervals.  For example,
+Given [1,3],[2,6],[8,10],[15,18] , return [1,6],[8,10],[15,18] .   Subscribe to
+see which companies asked this question    Show Tags   Array  Sort     Show
+Similar Problems   (H) Insert Interval  (E) Meeting Rooms  (M) Meeting Rooms II
+
+******************************sort-colors
+ Given an array with n objects colored red, white or blue, sort them so that
+objects of the same color are adjacent, with the colors in the order red, white
+and blue.  Here, we will use the integers 0, 1, and 2 to represent the color
+red, white, and blue respectively.   Note: You are not suppose to use the
+library's sort function for this problem.  click to show follow up.   Follow up:
+A rather straight forward solution is a two-pass algorithm using counting sort.
+First, iterate the array counting number of 0's, 1's, and 2's, then overwrite
+array with total number of 0's, then 1's and followed by 2's.  Could you come up
+with an one-pass algorithm using only constant space?     Subscribe to see which
+companies asked this question    Show Tags   Array  Two Pointers  Sort     Show
+Similar Problems   (M) Sort List  (M) Wiggle Sort  (M) Wiggle Sort II
+
+******************************valid-anagram
+ Given two strings s and t , write a function to determine if t is an anagram of
+s .  For example,  s = "anagram", t = "nagaram", return true.  s = "rat", t =
+"car", return false.  Note: You may assume the string contains only lowercase
+alphabets.  Follow up: What if the inputs contain unicode characters? How would
+you adapt your solution to such case?   Subscribe to see which companies asked
+this question    Show Tags   Hash Table  Sort     Show Similar Problems   (M)
+Group Anagrams  (E) Palindrome Permutation
+

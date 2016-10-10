@@ -1,0 +1,164 @@
+******************************maximum-subarray
+ Find the contiguous subarray within an array (containing at least one number)
+which has the largest sum.  For example, given the array [-2,1,-3,4,-1,2,1,-5,4]
+, the contiguous subarray [4,-1,2,1] has the largest sum = 6 .  click to show
+more practice.  More practice:  If you have figured out the O( n ) solution, try
+coding another solution using the divide and conquer approach, which is more
+subtle.    Subscribe to see which companies asked this question    Show Tags
+Array  Dynamic Programming  Divide and Conquer     Show Similar Problems   (E)
+Best Time to Buy and Sell Stock  (M) Maximum Product Subarray
+
+******************************expression-add-operators
+ Given a string that contains only digits 0-9 and a target value, return all
+possibilities to add binary operators (not unary) + , - , or * between the
+digits so they evaluate to the target value.  Examples:  "123", 6 -> ["1+2+3",
+"1*2*3"]
+"232", 8 -> ["2*3+2", "2+3*2"]
+"105", 5 -> ["1*0+5","10-5"]
+"00", 0 -> ["0+0", "0-0", "0*0"]
+"3456237490", 9191 -> []  Credits: Special thanks to @davidtan1890 for adding
+this problem and creating all test cases.   Subscribe to see which companies
+asked this question    Show Tags   Divide and Conquer     Show Similar Problems
+(M) Evaluate Reverse Polish Notation  (H) Basic Calculator  (M) Basic Calculator
+II  (M) Different Ways to Add Parentheses
+
+******************************the-skyline-problem
+ A city's skyline is the outer contour of the silhouette formed by all the
+buildings in that city when viewed from a distance. Now suppose you are given
+the locations and height of all the buildings as shown on a cityscape photo
+(Figure A), write a program to output the skyline formed by these buildings
+collectively (Figure B).  Cityscape     Use this image for the 'turning point'
+description of skyline     Use the following image if we'd like to define the
+output as 'horizontal lines' rather than 'turning points'  <a
+href="http://tinypic.com?ref=mij3wi" target="_blank">
+<img style="max-width: 45%;" src="http://i59.tinypic.com/mij3wi.jpg" border="0"
+alt="Skyline Contour">
+</a>  The geometric information of each building is represented by a triplet of
+integers [Li, Ri, Hi] , where Li and Ri are the x coordinates of the left and
+right edge of the ith building, respectively, and Hi is its height. It is
+guaranteed that 0 ≤ Li, Ri ≤ INT_MAX , 0 < Hi ≤ INT_MAX , and Ri - Li > 0 . You
+may assume all buildings are perfect rectangles grounded on an absolutely flat
+surface at height 0.  For instance, the dimensions of all buildings in Figure A
+are recorded as: [ [2 9 10], [3 7 15], [5 12 12], [15 20 10], [19 24 8] ] .  The
+output is a list of " key points " (red dots in Figure B) in the format of [
+[x1,y1], [x2, y2], [x3, y3], ... ] that uniquely defines a skyline. A key point
+is the left endpoint of a horizontal line segment . Note that the last key
+point, where the rightmost building ends, is merely used to mark the termination
+of the skyline, and always has zero height. Also, the ground in between any two
+adjacent buildings should be considered part of the skyline contour. For
+instance, the skyline in Figure B should be represented as: [ [2 10], [3 15], [7
+12], [12 0], [15 10], [20 8], [24, 0] ] .  Notes:   The number of buildings in
+any input list is guaranteed to be in the range [0, 10000] .  The input list is
+already sorted in ascending order by the left x position Li .  The output list
+must be sorted by the x position.  There must be no consecutive horizontal lines
+of equal height in the output skyline. For instance, [...[2 3], [4 5], [7 5],
+[11 5], [12 7]...] is not acceptable; the three lines of height 5 should be
+merged into one in the final output as such: [...[2 3], [4 5], [12 7], ...]
+Credits: Special thanks to @stellari for adding this problem, creating these two
+awesome images and all test cases.   Subscribe to see which companies asked this
+question    Show Tags   Binary Indexed Tree  Segment Tree  Heap  Divide and
+Conquer
+
+******************************search-a-2d-matrix-ii
+ Write an efficient algorithm that searches for a value in an m x n matrix. This
+matrix has the following properties:    Integers in each row are sorted in
+ascending from left to right.  Integers in each column are sorted in ascending
+from top to bottom.    For example,  Consider the following matrix:  [
+[1,   4,  7, 11, 15],
+[2,   5,  8, 12, 19],
+[3,   6,  9, 16, 22],
+[10, 13, 14, 17, 24],
+[18, 21, 23, 26, 30]
+]  Given target = 5 , return true .  Given target = 20 , return false .
+Subscribe to see which companies asked this question    Show Tags   Binary
+Search  Divide and Conquer     Show Similar Problems   (M) Search a 2D Matrix
+
+******************************majority-element
+ Given an array of size n , find the majority element. The majority element is
+the element that appears more than  &lfloor; n/2 &rfloor; times.  You may assume
+that the array is non-empty and the majority element always exist in the array.
+Credits: Special thanks to @ts for adding this problem and creating all test
+cases.   Subscribe to see which companies asked this question    Show Tags
+Array  Divide and Conquer  Bit Manipulation     Show Similar Problems   (M)
+Majority Element II
+
+******************************different-ways-to-add-parentheses
+ Given a string of numbers and operators, return all possible results from
+computing all the different possible ways to group numbers and operators. The
+valid operators are + , - and * .   Example 1  Input: "2-1-1" .  ((2-1)-1) = 0
+(2-(1-1)) = 2  Output: [0, 2]   Example 2  Input: "2*3-4*5"  (2*(3-(4*5))) = -34
+((2*3)-(4*5)) = -14
+((2*(3-4))*5) = -10
+(2*((3-4)*5)) = -10
+(((2*3)-4)*5) = 10  Output: [-34, -14, -10, -10, 10]  Credits: Special thanks to
+@mithmatt for adding this problem and creating all test cases.   Subscribe to
+see which companies asked this question    Show Tags   Divide and Conquer
+Show Similar Problems   (M) Unique Binary Search Trees II  (H) Basic Calculator
+(H) Expression Add Operators
+
+******************************median-of-two-sorted-arrays
+ There are two sorted arrays nums1 and nums2 of size m and n respectively.  Find
+the median of the two sorted arrays. The overall run time complexity should be
+O(log (m+n)).  Example 1:  nums1 = [1, 3]
+nums2 = [2]
+The median is 2.0   Example 2:  nums1 = [1, 2]
+nums2 = [3, 4]
+The median is (2 + 3)/2 = 2.5    Subscribe to see which companies asked this
+question    Show Tags   Binary Search  Array  Divide and Conquer
+
+******************************burst-balloons
+ Given n balloons, indexed from 0 to n-1 . Each balloon is painted with a
+number on it represented by array nums .
+You are asked to burst all the balloons. If the you burst
+balloon i you will get nums[left] * nums[i] * nums[right] coins. Here left and
+right are adjacent indices of i . After the burst, the left and right then
+becomes adjacent.  Find the maximum coins you can collect by bursting the
+balloons wisely.   Note:  (1) You may imagine nums[-1] = nums[n] = 1 . They are
+not real therefore you can not burst them. (2) 0 &le; n &le; 500, 0 &le; nums[i]
+&le; 100   Example:   Given [3, 1, 5, 8]   Return 167   nums = [3,1,5,8] -->
+[3,5,8] -->   [3,8]   -->  [8]  --> []
+coins =  3*1*5      +  3*5*8    +  1*3*8      + 1*8*1   = 167  Credits: Special
+thanks to @dietpepsi for adding this problem and creating all test cases.
+Subscribe to see which companies asked this question    Show Tags   Dynamic
+Programming  Divide and Conquer
+
+******************************count-of-smaller-numbers-after-self
+ You are given an integer array nums and you have to return a new counts array.
+The counts array has the property where counts[i] is
+the number of smaller elements to the right of nums[i] .  Example:  Given nums =
+[5, 2, 6, 1]
+To the right of 5 there are 2 smaller elements (2 and 1).
+To the right of 2 there is only 1 smaller element (1).
+To the right of 6 there is 1 smaller element (1).
+To the right of 1 there is 0 smaller element.  Return the array [2, 1, 1, 0] .
+Subscribe to see which companies asked this question    Show Tags   Divide and
+Conquer  Binary Indexed Tree  Segment Tree  Binary Search Tree     Show Similar
+Problems   (H) Count of Range Sum  (M) Queue Reconstruction by Height
+
+******************************kth-largest-element-in-an-array
+ Find the k th largest element in an unsorted array. Note that it is the kth
+largest element in the sorted order, not the kth distinct element. For example,
+Given [3,2,1,5,6,4] and k = 2, return 5.  Note: You may assume k is always
+valid, 1 ≤ k ≤ array's length.  Credits: Special thanks to @mithmatt for adding
+this problem and creating all test cases.   Subscribe to see which companies
+asked this question    Show Tags   Heap  Divide and Conquer     Show Similar
+Problems   (M) Wiggle Sort II  (M) Top K Frequent Elements
+
+******************************merge-k-sorted-lists
+ Merge k sorted linked lists and return it as one sorted list. Analyze and
+describe its complexity.   Subscribe to see which companies asked this question
+Show Tags   Divide and Conquer  Linked List  Heap     Show Similar Problems
+(E) Merge Two Sorted Lists  (M) Ugly Number II
+
+******************************count-of-range-sum
+ Given an integer array nums , return the number of range sums that lie in
+[lower, upper] inclusive. Range sum S(i, j) is defined as the sum of the
+elements in nums between indices i and j ( i ≤ j ), inclusive.   Note: A naive
+algorithm of O ( n 2 ) is trivial. You MUST do better than that.   Example:
+Given nums = [-2, 5, -1] , lower = -2 , upper = 2 , Return 3 . The three ranges
+are : [0, 0] , [2, 2] , [0, 2] and their respective sums are: -2, -1, 2 .
+Credits: Special thanks to @dietpepsi for adding this problem and creating all
+test cases.   Subscribe to see which companies asked this question    Show Tags
+Divide and Conquer  Binary Search Tree     Show Similar Problems   (H) Count of
+Smaller Numbers After Self
+
